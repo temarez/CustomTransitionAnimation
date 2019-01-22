@@ -12,6 +12,11 @@
 		A34344B021F6911900D218C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34344AE21F6911900D218C0 /* Main.storyboard */; };
 		A34344B221F6911B00D218C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34344B121F6911B00D218C0 /* Assets.xcassets */; };
 		A34344B521F6911B00D218C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34344B321F6911B00D218C0 /* LaunchScreen.storyboard */; };
+		A34344BD21F691C600D218C0 /* AnimatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34344BC21F691C600D218C0 /* AnimatorFactory.swift */; };
+		A34344C021F691FD00D218C0 /* BaseTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34344BF21F691FD00D218C0 /* BaseTransitionAnimator.swift */; };
+		A34344C221F6920E00D218C0 /* BounceTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34344C121F6920E00D218C0 /* BounceTransitionAnimator.swift */; };
+		A34344C421F6922F00D218C0 /* FadeTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34344C321F6922F00D218C0 /* FadeTransitionAnimator.swift */; };
+		A34344C621F6923E00D218C0 /* SlideTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34344C521F6923E00D218C0 /* SlideTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A34344B121F6911B00D218C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34344B421F6911B00D218C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A34344B621F6911B00D218C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34344BC21F691C600D218C0 /* AnimatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorFactory.swift; sourceTree = "<group>"; };
+		A34344BF21F691FD00D218C0 /* BaseTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTransitionAnimator.swift; sourceTree = "<group>"; };
+		A34344C121F6920E00D218C0 /* BounceTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceTransitionAnimator.swift; sourceTree = "<group>"; };
+		A34344C321F6922F00D218C0 /* FadeTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTransitionAnimator.swift; sourceTree = "<group>"; };
+		A34344C521F6923E00D218C0 /* SlideTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		A34344A921F6911900D218C0 /* CustomTransitionAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				A34344BE21F691DC00D218C0 /* Animators */,
 				A34344AA21F6911900D218C0 /* AppDelegate.swift */,
 				A34344AC21F6911900D218C0 /* ViewController.swift */,
 				A34344AE21F6911900D218C0 /* Main.storyboard */,
@@ -62,6 +73,18 @@
 				A34344B621F6911B00D218C0 /* Info.plist */,
 			);
 			path = CustomTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		A34344BE21F691DC00D218C0 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				A34344BC21F691C600D218C0 /* AnimatorFactory.swift */,
+				A34344BF21F691FD00D218C0 /* BaseTransitionAnimator.swift */,
+				A34344C121F6920E00D218C0 /* BounceTransitionAnimator.swift */,
+				A34344C321F6922F00D218C0 /* FadeTransitionAnimator.swift */,
+				A34344C521F6923E00D218C0 /* SlideTransitionAnimator.swift */,
+			);
+			path = Animators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34344C221F6920E00D218C0 /* BounceTransitionAnimator.swift in Sources */,
+				A34344C021F691FD00D218C0 /* BaseTransitionAnimator.swift in Sources */,
 				A34344AD21F6911900D218C0 /* ViewController.swift in Sources */,
+				A34344BD21F691C600D218C0 /* AnimatorFactory.swift in Sources */,
 				A34344AB21F6911900D218C0 /* AppDelegate.swift in Sources */,
+				A34344C421F6922F00D218C0 /* FadeTransitionAnimator.swift in Sources */,
+				A34344C621F6923E00D218C0 /* SlideTransitionAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
